@@ -87,7 +87,7 @@ public class LoginActivity extends AppCompatActivity {
         ch = findViewById(R.id.ch2);
 
         // Hide the status bar
-        hideStatusBar();
+        //hideStatusBar();
 
 
 

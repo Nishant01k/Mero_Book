@@ -43,8 +43,8 @@ public class CheckConnectionActivity extends AppCompatActivity {
                     .setConfirmButton("Okay", new SweetAlertDialog.OnSweetClickListener() {
                         @Override
                         public void onClick(SweetAlertDialog sweetAlertDialog) {
-                            startActivity(new Intent(CheckConnectionActivity.this,DownloadActivity.class));
-                            //finish();
+                            //startActivity(new Intent(CheckConnectionActivity.this,DownloadActivity.class));
+                            finish();
                         }
                     })
                     .show();

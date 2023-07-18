@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(android.R.id.content).startAnimation(fadeIn);
 
         // Hide the status bar
-        hideStatusBar();
+        //hideStatusBar();
 
         int currentVersionCodes;
 

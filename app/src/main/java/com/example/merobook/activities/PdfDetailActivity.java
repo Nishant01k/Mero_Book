@@ -258,8 +258,7 @@ public class PdfDetailActivity extends AppCompatActivity {
                                        .child(currentUser.getUid())
                                        .child("coins")
                                        .setValue(coins);
-                              // MyApplication.addToDownload(PdfDetailActivity.this, bookId);
-                               downloadPDF();
+                              MyApplication.addToDownload(PdfDetailActivity.this, bookId);
                            }else{
                                new SweetAlertDialog(PdfDetailActivity.this, SweetAlertDialog.ERROR_TYPE)
                                        .setTitleText("Oops... Insufficient Coins")

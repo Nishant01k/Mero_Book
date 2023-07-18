@@ -51,7 +51,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         // Set fullscreen flags
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+        /*getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         // Set layout flags to overlap status bar and navigation bar
@@ -64,6 +64,8 @@ public class SplashActivity extends AppCompatActivity {
                         View.SYSTEM_UI_FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_splash);
+
+         */
 
         TextView txtMessage = findViewById(R.id.appname);
 

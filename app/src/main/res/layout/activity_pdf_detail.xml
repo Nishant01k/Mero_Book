@@ -243,7 +243,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:drawableTop="@drawable/ic_download_white"
-            android:text="Add download 50 Coins"
+            android:text="download"
             android:background="@color/design_default_color_primary" />
 
 

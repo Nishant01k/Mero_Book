@@ -63,7 +63,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         ch = findViewById(R.id.ch2);
         // Hide the status bar
-        hideStatusBar();
+        //hideStatusBar();
 
 
         firebaseAuth = FirebaseAuth.getInstance();
