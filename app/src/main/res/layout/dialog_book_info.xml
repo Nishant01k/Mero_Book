@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pdfdetailsbox">
+
+
+    <TextView
+        android:id="@+id/titleTv"
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:text="Title of Book" />
+
+
+
+    <!--Table-->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTv"
+        android:layout_centerHorizontal="true">
+
+        <!--Category Row-->
+        <TableRow>
+            <TextView
+                android:id="@+id/categoryLabelTv"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="Category"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/categoryTv"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:text="N/A"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+        </TableRow>
+
+        <!--Date Row-->
+        <TableRow
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/dateLabelTv"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="Date"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/dateTv"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:text="N/A"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </TableRow>
+
+        <!--Size Row-->
+        <TableRow
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/sizeLabelTv"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="Size"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/sizeTv"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:text="N/A"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </TableRow>
+
+        <!--Views Count Row-->
+        <TableRow
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/viewsLabelTv"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="Views"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/viewsTv"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:text="N/A"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </TableRow>
+
+        <!--Downloads Count Row-->
+        <TableRow
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/downloadsLabelTv"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="Downloads"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/downloadsTv"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:text="N/A"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/pagesLabelTv"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="Pages"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/pageTv"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:text="N/A"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+
+        </TableRow>
+
+
+        <TextView
+            android:id="@+id/descriptionTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Description..................."
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:layout_below="@id/pageTv"
+            android:textColor="@color/black"/>
+
+    </TableLayout>
+
+
+</RelativeLayout>

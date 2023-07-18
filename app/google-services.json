@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "717738671416",
+    "project_id": "mero-book-48658",
+    "storage_bucket": "mero-book-48658.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717738671416:android:e659fdec89ec8cb08795cd",
+        "android_client_info": {
+          "package_name": "com.example.merobook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717738671416-thlnhjq35q901k528smfp5l07112s8en.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.merobook",
+            "certificate_hash": "e616d2aa789306d3557317a32ed685bf0f4240d4"
+          }
+        },
+        {
+          "client_id": "717738671416-02t6vf8h7epaodr300cohr5grr1io87p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARct2Eg2_iUKDNkjUBhGsxM4fxF3uwXEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "717738671416-02t6vf8h7epaodr300cohr5grr1io87p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
