@@ -80,10 +80,9 @@ public class DashboardAdminActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 new SweetAlertDialog(DashboardAdminActivity.this, SweetAlertDialog.WARNING_TYPE)
-                        .setTitleText("Are you sure?")
-                        .setContentText("You want to Log Out!")
-                        .setCancelText("No,cancel please!")
-                        .setConfirmText("Yes, Do it!")
+                        .setTitleText("You want to Log Out!")
+                        .setCancelText("No")
+                        .setConfirmText("Yes")
                         .showCancelButton(true)
                         .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
                             @Override

@@ -101,6 +101,15 @@ public class ChatActivity extends AppCompatActivity {
         String token = getIntent().getStringExtra("token");
         String uid = getIntent().getStringExtra("uid");
 
+        binding.profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ChatActivity.this, UserProfileActivity.class);
+                intent.putExtra("uid", receiverUid);
+                startActivity(intent);
+            }
+        });
+
         //Toast.makeText(this, token, Toast.LENGTH_SHORT).show();
 
         binding.name.setText(name);

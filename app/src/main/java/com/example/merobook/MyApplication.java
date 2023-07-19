@@ -257,16 +257,16 @@ public class MyApplication extends Application {
                 });
     }
 
-    public static void downloadBook(Context context, String bookId, String bookTitle, String bookUrl) {
+    public static void downloadBook(Context context, String bookId, String bookTitle, String bookUrl){
         Log.d(TAG_DOWNLOAD, "downloadBook: downloading book...");
 
         String nameWithExtension = bookTitle + ".pdf";
-        Log.d(TAG_DOWNLOAD, "downloadBook: NAME: " + nameWithExtension);
+        Log.d(TAG_DOWNLOAD, "downloadBook: NAME: "+nameWithExtension);
 
         //progress dialog
         ProgressDialog progressDialog = new ProgressDialog(context);
         progressDialog.setTitle("Please wait");
-        progressDialog.setMessage("Downloading " + nameWithExtension + "...");
+        progressDialog.setMessage("Downloading "+ nameWithExtension +"..."); //e.g. Downloding ABC_Book.pdf
         progressDialog.setCanceledOnTouchOutside(false);
         progressDialog.show();
 
@@ -283,9 +283,9 @@ public class MyApplication extends Application {
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Log.d(TAG_DOWNLOAD, "onFailure: Failed to download due to " + e.getMessage());
+                        Log.d(TAG_DOWNLOAD, "onFailure: Failed to download due to "+e.getMessage());
                         progressDialog.dismiss();
-                        Toast.makeText(context, "Failed to download due to " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(context, "Failed to download due to "+e.getMessage(), Toast.LENGTH_SHORT).show();
 
                     }
                 });
@@ -307,11 +307,11 @@ public class MyApplication extends Application {
             Log.d(TAG_DOWNLOAD, "saveDownloadedBook: Saved to Download Folder");
             progressDialog.dismiss();
 
-
             incrementBookDownloadCount(bookId);
-        } catch (Exception e) {
-            Log.d(TAG_DOWNLOAD, "saveDownloadedBook: Failed saving to Download Folder due to " + e.getMessage());
-            Toast.makeText(context, "Failed saving to Download Folder due to " + e.getMessage(), Toast.LENGTH_SHORT).show();
+        }
+        catch (Exception e){
+            Log.d(TAG_DOWNLOAD, "saveDownloadedBook: Failed saving to Download Folder due to "+e.getMessage());
+            Toast.makeText(context, "Failed saving to Download Folder due to "+e.getMessage(), Toast.LENGTH_SHORT).show();
             progressDialog.dismiss();
         }
     }
@@ -420,58 +420,4 @@ public class MyApplication extends Application {
                     });
         }
     }
-
-        public static void addToDownload (Context context, String bookId) {
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-            if (firebaseAuth.getCurrentUser() == null) {
-                Toast.makeText(context, "You are not logged in", Toast.LENGTH_SHORT).show();
-            } else {
-                long timestamp = System.currentTimeMillis();
-
-                HashMap<String, Object> hashMap = new HashMap<>();
-                hashMap.put("bookId", "" + bookId);
-                hashMap.put("timestamp", "" + timestamp);
-
-                DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Users");
-                ref.child(firebaseAuth.getUid()).child("Download").child(bookId)
-                        .setValue(hashMap)
-                        .addOnSuccessListener(new OnSuccessListener<Void>() {
-                            @Override
-                            public void onSuccess(Void unused) {
-                                Toast.makeText(context, "Added to Your download list...", Toast.LENGTH_SHORT).show();
-                            }
-                        })
-                        .addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                Toast.makeText(context, "Failed to add to download due to " + e.getMessage(), Toast.LENGTH_SHORT).show();
-
-                            }
-                        });
-            }
-        }
-
-        public static void removeFromDOwnload (Context context, String bookId) {
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-            if (firebaseAuth.getCurrentUser() == null) {
-                Toast.makeText(context, "You are not logged in", Toast.LENGTH_SHORT).show();
-            } else {
-                DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Users");
-                ref.child(firebaseAuth.getUid()).child("Download").child(bookId)
-                        .removeValue()
-                        .addOnSuccessListener(new OnSuccessListener<Void>() {
-                            @Override
-                            public void onSuccess(Void unused) {
-                                Toast.makeText(context, "Removed from Your download list...", Toast.LENGTH_SHORT).show();
-                            }
-                        })
-                        .addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                Toast.makeText(context, "Failed to remove from download due to " + e.getMessage(), Toast.LENGTH_SHORT).show();
-
-                            }
-                        });
-            }
-        }
     }

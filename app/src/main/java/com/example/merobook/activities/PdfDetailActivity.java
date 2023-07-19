@@ -248,18 +248,22 @@ public class PdfDetailActivity extends AppCompatActivity {
            public void onClick(View view) {
                    if (firebaseAuth.getCurrentUser() == null) {
                        Toast.makeText(PdfDetailActivity.this, "You're not logged in", Toast.LENGTH_SHORT).show();
-                   } else {
-                       if (isInMyFavorite) {
-                           MyApplication.removeFromDOwnload(PdfDetailActivity.this, bookId);
-                       } else {
-                           if (coins >= 50) {
+                   } else if(coins >= 50) {
                                coins = coins - 50;
                                database.getReference().child("Users")
                                        .child(currentUser.getUid())
                                        .child("coins")
                                        .setValue(coins);
-                              MyApplication.addToDownload(PdfDetailActivity.this, bookId);
-                           }else{
+                               Log.d(TAG_DOWNLOAD, "onClick: Checking permission");
+                               if (ContextCompat.checkSelfPermission(PdfDetailActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED){
+                                   Log.d(TAG_DOWNLOAD, "onClick: Permission already granted, can download book");
+                                   MyApplication.downloadBook(PdfDetailActivity.this, ""+bookId, ""+bookTitle, ""+bookUrl);
+                               }
+                               else {
+                                   Log.d(TAG_DOWNLOAD, "onClick: Permission was not granted, request permission...");
+                                   requestPermissionLauncher.launch(Manifest.permission.WRITE_EXTERNAL_STORAGE);
+                               }
+                           }else {
                                new SweetAlertDialog(PdfDetailActivity.this, SweetAlertDialog.ERROR_TYPE)
                                        .setTitleText("Oops... Insufficient Coins")
                                        .setContentText("Please Check out Earning section to get some coins")
@@ -272,10 +276,8 @@ public class PdfDetailActivity extends AppCompatActivity {
 
                        }
                    }
-
-               }
-           }
        });
+
         binding.rewardBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

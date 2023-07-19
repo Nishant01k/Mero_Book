@@ -162,7 +162,7 @@
                 android:id="@+id/registerBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/cpasswordTil"
+                android:layout_below="@id/text"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/shape_button01"
                 android:text="Register"
@@ -172,14 +172,14 @@
                 android:id="@+id/ch2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/registerBtn"
+                android:layout_below="@id/cpasswordTil"
                 android:layout_alignParentLeft="true" />
 
             <TextView
                 android:id="@+id/text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/registerBtn"
+                android:layout_below="@id/cpasswordTil"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="136dp"

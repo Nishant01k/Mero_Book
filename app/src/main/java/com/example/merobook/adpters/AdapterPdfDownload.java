@@ -73,7 +73,6 @@ public class AdapterPdfDownload extends  RecyclerView.Adapter<AdapterPdfDownload
         holder.removeFavBTn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MyApplication.removeFromDOwnload(context, model.getId());
 
             }
         });

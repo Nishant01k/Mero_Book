@@ -107,7 +107,6 @@
                 android:layout_below="@id/passwordTil"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="5dp"
-                android:padding="5dp"
                 android:text="Forgot Password?"
                 android:textColor="@color/gray02" />
 
@@ -126,14 +125,14 @@
                 android:id="@+id/ch2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/loginBtn"
+                android:layout_below="@id/passwordTil"
                 android:layout_alignParentLeft="true" />
 
             <TextView
                 android:id="@+id/text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/loginBtn"
+                android:layout_below="@id/passwordTil"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="136dp"
