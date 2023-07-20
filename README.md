@@ -1,7 +1,8 @@
 # Mero Book
 
+<div align="center">
 [![My Logo](https://github.com/Nishant01k/Mero_Book/blob/master/app/src/main/res/drawable/logo.png)](https://www.example.com)
-
+</div>
 
 
 
