@@ -214,4 +214,10 @@ public class DashboardUserActivity extends AppCompatActivity {
             return fragmentTitleList.get(position);
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        // Do nothing to disable going back to the previous activity
+        // Remove the super.onBackPressed() line
+    }
 }

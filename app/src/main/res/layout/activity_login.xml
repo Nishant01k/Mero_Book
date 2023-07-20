@@ -106,8 +106,11 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/passwordTil"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="15dp"
                 android:text="Forgot Password?"
+                android:layout_toLeftOf="@id/text"
+                android:layout_centerVertical="true"
+
                 android:textColor="@color/gray02" />
 
 

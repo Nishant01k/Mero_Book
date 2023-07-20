@@ -240,4 +240,9 @@ public class DashboardAdminActivity extends AppCompatActivity {
                     .into(binding.profileImage);
         }
     }
+    @Override
+    public void onBackPressed() {
+        // Do nothing to disable going back to the previous activity
+        // Remove the super.onBackPressed() line
+    }
 }

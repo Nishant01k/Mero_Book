@@ -280,7 +280,7 @@ public class ChatActivity extends AppCompatActivity {
                 @Override
                 public Map<String, String> getHeaders() throws AuthFailureError {
                     HashMap<String, String> map = new HashMap<>();
-                    String key = "Key=AAAApxyO_Tg:APA91bFsfUGL90h29mu4zqI1qOCgN4FKd0xEugpFnIjZSxKLzCbnxTaQs4fHUiw-TJUBg3K6nHCm9si6smkECd-uOEQFufipQzNSBTn_Z5VbwK92Gx8ALUF_zVMIV-QURtOo5C9NpFun";
+                    String key = "Key=AAAA3IhufIs:APA91bHB9-skXlJe97DI-wglvsBytp6HBIV0lMX_4dyuaSG8FbrohY4urov1OYGKlChBM-O3CGxovjUN79bJiehBWD1FxzlHJ2EFghNSCfLdKQUqtXOt13BkoliqPeVXkeL8gJ0mgZhD";
                     map.put("Content-Type", "application/json");
                     map.put("Authorization", key);
 

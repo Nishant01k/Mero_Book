@@ -49,49 +49,10 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        // Set fullscreen flags
-        /*getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
-        // Set layout flags to overlap status bar and navigation bar
-        getWindow().getDecorView().setSystemUiVisibility(
-                View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN |
-                        View.SYSTEM_UI_FLAG_LAYOUT_STABLE |
-                        View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION |
-                        View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
-                        View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY |
-                        View.SYSTEM_UI_FLAG_FULLSCREEN);
-
         setContentView(R.layout.activity_splash);
-
-         */
-
-        TextView txtMessage = findViewById(R.id.appname);
-
-
-
 
         firebaseAuth = FirebaseAuth.getInstance();
 
-        // Hide the status bar
-        //hideStatusBar();
-
-
-        ObjectAnimator fadeInOut = ObjectAnimator.ofFloat(txtMessage, "alpha", 0f, 1f);
-        fadeInOut.setDuration(5000);
-        fadeInOut.setRepeatMode(ValueAnimator.REVERSE);
-        fadeInOut.setRepeatCount(ValueAnimator.INFINITE);
-        fadeInOut.start();
-
-
-        // Load the animation from XML
-       /* Animation animZoomOut = AnimationUtils.loadAnimation(this, R.anim.zoom_out);
-
-        // Start the animation on the logo image view
-        txtMessage.startAnimation(animZoomOut);
-
-        */
 
         new Handler().postDelayed(new Runnable() {
             @Override

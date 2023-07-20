@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -21,7 +22,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
 
     private EditText emailEt;
     private Button recoverBtn;
-    private ImageButton backBtn;
+    private ImageView backBtn;
 
     private FirebaseAuth firebaseAuth;
     private ProgressDialog progressDialog;
