@@ -39,13 +39,7 @@ Mero Book is a versatile and user-friendly mobile application that allows you to
 
 ## Screenshots
 
-| Screenshot 1 | Screenshot 2 | Screenshot 3 |
-|--------------|--------------|--------------|
-| <img src="https://github.com/Nishant01k/Mero_Book/blob/master/app/src/main/res/Screenshot/2.jpg" alt="My Logo" alt="My Logo"> | ![Screenshot 2](screenshots/screenshot2.png) | ![Screenshot 3](screenshots/screenshot3.png) |
-
-| Screenshot 4 | Screenshot 5 |
-|--------------|--------------|
-| ![Screenshot 4](screenshots/screenshot4.png) | ![Screenshot 5](screenshots/screenshot5.png) |
+| <img src="https://github.com/Nishant01k/Mero_Book/blob/master/app/src/main/res/Screenshot/1.jpg" alt="My Logo" alt="My Logo">
 
 
 ## Contributing
