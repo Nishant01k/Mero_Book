@@ -1,6 +1,7 @@
 # Mero Book
 
-[![My Logo]([https://github.com/your-username/your-repo/raw/main/images/my_logo.png](https://raw.githubusercontent.com/Nishant01k/mero-website/master/merooo.png))](https://www.example.com)
+[![My Logo](https://github.com/Nishant01k/Mero_Book/blob/master/app/src/main/res/drawable/logo.png)](https://www.example.com)
+
 
 
 
