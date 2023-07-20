@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <a href="https://www.example.com">
+  <a href="(https://github.com/Nishant01k/Mero_Book)">
     <img src="https://github.com/Nishant01k/Mero_Book/blob/master/app/src/main/res/drawable/logo.png" alt="My Logo">
   </a>
 </p>
