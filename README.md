@@ -1,7 +1,7 @@
 # Mero Book
 
-![Mero Book Logo](/app/src/main/res/drawable
-/logo.png)
+[![Mero Book Logo](path/to/your/logo.png)]([https://www.example.com](https://raw.githubusercontent.com/Nishant01k/mero-website/master/merooo.png))
+
 
 Mero Book is a versatile and user-friendly mobile application that allows you to manage your notes and organize your favorite books efficiently. With a seamless user interface and a range of powerful features, Mero Book makes it easy to stay organized and productive on the go.
 
